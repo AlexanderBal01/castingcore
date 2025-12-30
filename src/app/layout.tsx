@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description: "A portfolio project for Alexander Bal",
   appleWebApp: {
     title: "CastingCore",
-  }
+  },
 };
 
 export default function RootLayout({
