@@ -9,6 +9,8 @@
   --animate-enter-from-right: enter-from-right 250ms ease;
   --animate-exit-to-left: exit-to-left 250ms ease;
   --animate-exit-to-right: exit-to-right 250ms ease;
+  --animate-slide-in-from-right: slide-in-from-right 500ms ease;
+  --animate-slide-out-to-right: slide-out-to-right 500ms ease;
 
   @keyframes scale-in {
     0% {
@@ -91,6 +93,24 @@
     100% {
       opacity: 0;
       transform: translateX(200px);
+    }
+  }
+
+  @keyframes slide-in-from-right {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-out-to-right {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
     }
   }
 }
