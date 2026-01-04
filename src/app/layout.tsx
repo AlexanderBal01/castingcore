@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   description: "A portfolio project for Alexander Bal",
   appleWebApp: {
     title: "CastingCore",
+    statusBarStyle: "black-translucent",
   },
 };
 
@@ -30,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} mt-5 flex flex-col antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} flex h-dvh min-h-dvh flex-col pt-5 antialiased`}
       >
         <Navbar />
         {children}
